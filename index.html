@@ -1,56 +1,114 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EBBH - Plomberie Chauffage Électricité</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <h1>EBBH</h1>
-    <p>Plomberie - Chauffage - Électricité</p>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EBBH - Plomberie, Chauffage, Électricité</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Montserrat', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-900 to-blue-600 text-white shadow-lg sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+        <h1 class="text-3xl font-bold tracking-wide">EBBH</h1>
+        <nav class="space-x-6 text-lg">
+          <a href="#services" class="hover:text-yellow-300 transition">Services</a>
+          <a href="#gallery" class="hover:text-yellow-300 transition">Réalisations</a>
+          <a href="#contact" class="hover:text-yellow-300 transition">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-  <nav>
-    <a href="#presentation">Présentation</a>
-    <a href="#services">Services</a>
-    <a href="#galerie">Galerie</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <!-- Hero Section -->
+    <section class="relative h-screen">
+      <img src="img_plombier.jpg" alt="Plomberie Chauffage Électricité" class="absolute inset-0 w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30"></div>
+      <div class="relative z-10 flex items-center justify-center h-full">
+        <div class="text-center text-white px-6 max-w-3xl">
+          <h2 class="text-5xl md:text-6xl font-bold leading-tight drop-shadow-md mb-6">Experts en plomberie, chauffage & électricité</h2>
+          <p class="text-xl md:text-2xl drop-shadow-sm">Interventions rapides et travaux de qualité à Paris et en Île-de-France</p>
+        </div>
+      </div>
+    </section>
 
-  <section id="presentation">
-    <h2>Présentation</h2>
-    <p id="presentation-text"></p>
-  </section>
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-6">
+        <h3 class="text-4xl font-bold text-center mb-12">Nos Services</h3>
+        <div class="grid gap-10 md:grid-cols-3">
+          <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition">
+            <img src="https://img.icons8.com/fluency/96/000000/plumbing.png" alt="Plomberie" class="mx-auto mb-4">
+            <h4 class="text-xl font-semibold mb-2">Plomberie</h4>
+            <p>Installation, dépannage, rénovation complète de vos équipements sanitaires.</p>
+            <a href="#" class="mt-4 inline-block bg-blue-600 text-white px-5 py-2 rounded-lg font-medium hover:bg-blue-700 transition">Prendre rendez-vous</a>
+          </div>
+          <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition">
+            <img src="https://img.icons8.com/color/96/000000/radiator.png" alt="Chauffage" class="mx-auto mb-4">
+            <h4 class="text-xl font-semibold mb-2">Chauffage</h4>
+            <p>Remplacement de chaudières, planchers chauffants, entretien annuel.</p>
+            <a href="#" class="mt-4 inline-block bg-blue-600 text-white px-5 py-2 rounded-lg font-medium hover:bg-blue-700 transition">Prendre rendez-vous</a>
+          </div>
+          <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition">
+            <img src="https://img.icons8.com/color/96/000000/electrical.png" alt="Électricité" class="mx-auto mb-4">
+            <h4 class="text-xl font-semibold mb-2">Électricité</h4>
+            <p>Mises aux normes, dépannage, installations neuves ou rénovation complète.</p>
+            <a href="#" class="mt-4 inline-block bg-blue-600 text-white px-5 py-2 rounded-lg font-medium hover:bg-blue-700 transition">Prendre rendez-vous</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section id="services">
-    <h2>Nos Services</h2>
-    <div class="services" id="services-container"></div>
-  </section>
+    <!-- Zone d'intervention Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h3 class="text-4xl font-bold mb-6">Zone d'intervention</h3>
+        <p class="text-lg mb-4">Basés à Paris, nous intervenons dans toute l’Île-de-France et nous nous déplaçons également dans un rayon allant jusqu'à 300 km pour les gros chantiers.</p>
+        <p class="text-lg">Nous couvrons notamment les départements suivants : Yvelines (78), Essonne (91), Hauts-de-Seine (92), Seine-Saint-Denis (93), Val-de-Marne (94), Val-d'Oise (95), Seine-et-Marne (77), Oise (60), Eure (27), Loiret (45), Aube (10), Marne (51), Yonne (89).</p>
+      </div>
+    </section>
 
-  <section id="galerie">
-    <h2>Galerie de Réalisations</h2>
-    <div class="galerie" id="galerie-container"></div>
-  </section>
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-6">
+        <h3 class="text-4xl font-bold text-center mb-10">Nos Réalisations</h3>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
+            <img src="https://via.placeholder.com/500x350" alt="Projet 1" class="w-full object-cover h-64">
+          </div>
+          <div class="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
+            <img src="https://via.placeholder.com/500x350" alt="Projet 2" class="w-full object-cover h-64">
+          </div>
+          <div class="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
+            <img src="https://via.placeholder.com/500x350" alt="Projet 3" class="w-full object-cover h-64">
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <div class="contact-info">
-      <p>Email : <a href="mailto:hocineboucha@hotmail.fr">hocineboucha@hotmail.fr</a></p>
-      <p>Téléphone : <a href="tel:+33753028751">07 53 02 87 51</a></p>
-      <p>Adresse : 12 place de l'Argonne, 75019 Paris</p>
-      <p>ps : merci à ma chère Fatiha d'être la meilleure femme et maman du monde</p>
-    </div>
-  </section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-100">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h3 class="text-4xl font-bold mb-6">Contactez-nous</h3>
+        <p class="mb-4 text-lg">📍 Paris</p>
+        <p class="mb-4 text-lg">📞 07 53 02 87 51</p>
+        <p class="mb-4 text-lg">📧 <a href="mailto:hocineboucha@hotmail.fr" class="text-blue-600 hover:underline">hocineboucha@hotmail.fr</a></p>
+        <div class="mt-8">
+          <a href="mailto:hocineboucha@hotmail.fr" class="inline-block bg-blue-700 text-white text-lg font-semibold px-6 py-3 rounded-xl shadow hover:bg-blue-800 transition">Envoyer un message</a>
+        </div>
+      </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 EBBH - Tous droits réservés</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white text-center py-6">
+      <p class="text-sm">&copy; 2025 EBBH - Tous droits réservés</p>
+    </footer>
+  </body>
 </html>
